@@ -1,6 +1,8 @@
 FROM arm64v8/alpine:3.9
 LABEL maintainer="Alexey Pustovalov <alexey.pustovalov@zabbix.com>"
 
+COPY qemu-arm-static /usr/bin
+
 ARG BUILD_DATE
 ARG VCS_REF
 
